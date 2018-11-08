@@ -1,0 +1,161 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face {
+	font-family: 'FontAwesome';
+	src: url('../fonts/fontawesome-webfont.eot?v=4.7.0');
+	src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+.fa {
+	display: inline-block;
+	font: normal normal normal 14px/1 FontAwesome;
+	font-size: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.fa-tumblr-square:before {
+	content: "\f174";
+}
+.fa-twitter-square:before {
+	content: "\f081";
+}
+.fa-quote-left:before {
+	content: "\f10d";
+}
+html {
+	height: 100%;
+}
+body {
+	margin: 0px;
+	width: 100%;
+	height: 100%;
+	font-family: 'Raleway', sans-serif;
+	;
+	font-size: 14px;
+	color: #666;
+}
+::-moz-selection {
+ color: #FFF;
+ background: #00AEEF;
+}
+::selection {
+	color: #FFF;
+	background: #00AEEF;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+a {
+	color: #ff55cc;
+	text-decoration: none;
+	-webkit-transition: all 0.3s linear;
+	-moz-transition: all 0.3s linear;
+	-o-transition: all 0.3s linear;
+	transition: all 0.3s linear;
+}
+a img {
+	border: none;
+}
+img {
+	display: block;
+}
+ul, ol {
+	margin: 0;
+	padding: 0;
+}
+ul {
+	list-style: none;
+}
+h1, h2, h3, h4, h5, h6, p {
+	display: block;
+	margin: 0px;
+	padding: 0px;
+	font-weight: 400;
+}
+section, article, aside, header, hgroup, footer, nav, blockquote, address, time, figure, canvas, video {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+article, aside, canvas, details, figcaption, figure, footer, header, hgroup, nav, menu, section, summary {
+	display: block;
+}
+p {
+	padding-bottom: 20px;
+}
+.clear {
+	clear: both;
+	float: none;
+}
+#loader{
+	width: 50px;
+	height: 50px;
+	border: 5px solid #e6e6e6;
+	border-top-color: #390;
+	border-radius: 50%;
+	position:fixed;
+	left:0px;
+	right:0px;
+	top:0px;
+	bottom: 0px;
+	margin: auto;
+	animation: round 1s linear infinite;
+	}
+	@keyframes round{
+		from {
+			transform: rotate(0deg);
+			}
+			to {
+			transform: rotate(360deg);
+			}
+		}
+html {
+	background: url(https://images.unsplash.com/photo-1465268218846-a984c79f1045?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&s=8bed723fd7276ae54be6650a2d7961b8) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+.container > .wrapper {
+	width: 600px;
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 20px;
+	color: #ffffff;
+	font-size: 30px;
+	font-family: 'Roboto';
+}
+.container > .wrapper > .weather_report {
+	margin-top: 20px;
+}
+.container > .wrapper > .weather_report > * {
+	display: inline-block;
+	vertical-align: middle;
+}
+.container > .wrapper > .weather_info_wrapper {
+	display: table;
+	margin: 0 auto;
+	padding-top: 30px;
+}
+.container > .wrapper > .weather_info_wrapper > ul > li {
+	display: inline;
+	border-radius: 5px;
+	padding: 10px;
+	background: -webkit-linear-gradient(#888 0%, #888 50%, #666 50%, #666 100%);
+	background: -o-linear-gradient(#888 0%, #888 50%, #666 50%, #666 100%);
+	background: -moz-linear-gradient(#888 0%, #888 50%, #666 50%, #666 100%);
+	background: linear-gradient(#888 0%, #888 50%, #666 50%, #666 100%);
+	color: #fff;
+	overflow: hidden;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+	margin-right: 10px;
+}
+.temp_to_fahrenheit{
+	cursor: pointer;
+}
